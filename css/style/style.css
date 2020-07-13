@@ -1,0 +1,828 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.firstSection {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../../images/slider/slider-01.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.firstSection:before {
+	content: '';
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: -1;
+}
+/* Start navbar */
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	font-family: sans-serif;
+}
+.logo {
+	color: rgb(226, 226, 226);
+	font-size: 20px;
+	width: 35%;
+	color: #ff305b;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 42%;
+	letter-spacing: .5s;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links a {
+	color: rgb(226, 226, 226);
+	text-decoration: none;
+	font-size: 16px;
+	transition: all .5s ease;
+}
+.nav-links a:hover {
+	color: #ff305b;
+}
+.nav-links .active {
+	color: #ff305b;
+}
+/* End navbar */
+
+/* Start Information About Me */
+
+.firstSection .informations {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 200px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.firstSection .informations h3 {
+	font-size: 24px;
+	color: #fff;
+}
+.firstSection .informations h1 {
+	text-transform: uppercase;
+	color: #ff305b;
+	font-size: 70px;
+	font-weight: bold;
+}
+.firstSection .informations p {
+	color: #fff;
+	font-size: 26px;
+	font-weight: normal;
+	text-transform: capitalize;
+}
+
+/* End Information About Me */
+
+/* Start Second Page */
+
+.secondSection {
+	width: 100%;
+	height: 100vh;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Start Container to Center items */
+
+.container {
+	width: 90%;
+	margin: auto;
+	overflow: auto;
+	padding: 50px 0;
+}
+/* End Container */
+
+/* Start My Picture */
+.secondSection .mySkills {
+	width: 50%;
+	float: left;
+	margin-top: 50px;
+}
+.secondSection .profile {
+	width: 365px;
+	height: 440px;
+	border: 8px solid #555;
+	border-radius: 5px;
+	margin-left: 100px;
+}
+/* Start Overlay on image */
+.secondSection .profile .hoverOnImage {
+	width: 365px;
+	height: 440px;
+	position: relative;
+	display: inline-block;
+}
+.secondSection .profile .hoverOnImage .overlay {
+	position: absolute;
+	transition: all .5s ease;
+	opacity: 0;
+	background-color: #333;
+	margin-left: 20px;
+	margin-bottom: -20px;
+	width: 365px;
+	height: 440px;
+	border-radius: 5px;
+}
+
+.secondSection .profile .hoverOnImage .overlay:hover {
+	opacity: 1;
+}
+
+.secondSection .profile .hoverOnImage .overlay .someIcon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 20px;
+}
+
+.secondSection .profile .hoverOnImage .overlay .someIcon i {
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.secondSection .profile .hoverOnImage .overlay .someIcon i:hover {
+	color: #ff305b;
+}
+.secondSection .profile .hoverOnImage .overlayBottom {
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.secondSection .profile .hoverOnImage:hover .overlayBottom {
+	height: 100%;
+}
+.secondSection .profile .hoverOnImage img {
+	width: 365px;
+	height: 440px;
+	margin: 20px 0 0 20px;
+	display: block;
+	border-radius: 5px;
+}
+/* End Overlay on image */
+
+/* Start Some Information About Me */
+.secondSection .aboutMe h2 {
+	text-transform: uppercase;
+	font-size: 34px;
+	margin-bottom: 10px;
+}
+
+.secondSection .aboutMe h2 span {
+	color: #ff305b;
+}
+
+.secondSection .aboutMe p {
+	color: #555;
+	font-size: 18px;
+	line-height: 1.4;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #555;
+}
+
+.secondSection .mySelf div {
+	width: 25%;
+	float: left;
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.secondSection .mySelf div p span {
+	font-weight: bold;
+	color: #333;
+}
+.secondSection .mySelf div p {
+	color: #555;
+}
+.secondSection .mySelf div button {
+	padding: 14px 19px;
+	border: none;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #ff305b;
+	color: #fff;
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all .5s ease;
+	outline: none;
+}
+.secondSection .mySelf div button:hover {
+	background-color: #ec2403;
+}
+
+/* End Some Information About Me */
+
+/* End Second Page */
+
+/* Start Third Page */
+
+.thirdSection {
+	width: 100%;
+	height: 70vh;
+	background-color: #f1f1f1;
+}
+.thirdSection h1 {
+	text-align: center;
+	margin-bottom: 5px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+/* Start hr is this website */
+.thirdSection .width100px {
+	width: 150px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin-bottom: 5px;
+	margin: auto;
+}
+.thirdSection .width40px {
+	width: 75px;
+	height: 1px;
+	background-color: #f1f1f1;
+	display: block;
+	margin: auto;
+}
+.thirdSection .width50px {
+	width: 75px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin: auto;
+}
+/* End hr is this website */
+.thirdSection .services {
+	width: calc(92%/4);
+	margin-right: 2%;
+	height: 230px;
+	background-color: #f1f1f1;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 20px;
+	margin-top: 60px;
+	float: left;
+	border-radius: 3px;
+	transition: all .5s ease-in-out;
+}
+.thirdSection .services:hover {
+	background-color: #fff;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+.thirdSection .services:hover i {
+	font-size: 28px;
+}
+
+.thirdSection .services i {
+	font-size: 26px;
+	color: #ff305b;
+	margin-bottom: 8px;
+	margin-top: 14px;
+	transition: all .5s ease-in-out;
+}
+
+.thirdSection .services h2 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.thirdSection .services p {
+	line-height: 1.7;
+}
+/* End Third Page */
+
+/* Start Forth Page */
+.forthPage {
+	width: 100%;
+	height: 100vh;
+	padding-bottom: 50px;
+}
+
+.forthPage h1 {
+	text-align: center;
+	margin-bottom: 5px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 90px;
+}
+
+/* Start hr is this website */
+.forthPage .width100px {
+	width: 150px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin-bottom: 5px;
+	margin: auto;
+}
+.forthPage .width40px {
+	width: 75px;
+	height: 1px;
+	background-color: #fff;
+	display: block;
+	margin: auto;
+}
+.forthPage .width50px {
+	width: 75px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin: auto;
+}
+/* End hr is this website */
+.forthPage .listPortfolio {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	padding-top: 40px;
+}
+.forthPage .listPortfolio div {
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	cursor: pointer;
+	color: #333;
+}
+
+/* Start Overlay on images */
+.forthPage .projectPortfolio .centerProjects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+}
+.forthPage .projectPortfolio .hoverOnImage {
+	width: 360px;
+	height: 270px;
+	position: relative;
+	display: inline-block;
+	margin: 20px 40px 20px 20px;
+}
+.forthPage .projectPortfolio .hoverOnImage .overlay {
+	position: absolute;
+	transition: all .5s ease;
+	opacity: 0;
+	background-color: #333;
+	margin-left: 20px;
+	margin-bottom: -20px;
+	width: 365px;
+	height: 440px;
+	border-radius: 5px;
+}
+
+.forthPage .projectPortfolio .hoverOnImage .overlay:hover {
+	opacity: 1;
+}
+
+.forthPage .projectPortfolio .hoverOnImage .overlay .someIcon {
+	position: absolute;
+	bottom: 5%;
+	left: 90%;
+	color: #ff305b;
+	font-size: 20px;
+}
+
+.forthPage .projectPortfolio .hoverOnImage .overlay .someIcon i {
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.forthPage .projectPortfolio .hoverOnImage .overlay .someIcon i:hover {
+	color: #ff305b;
+}
+.forthPage .projectPortfolio .hoverOnImage .overlayFade {
+	width: 100%;
+	height: 100%;
+	top: 20px;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.forthPage .projectPortfolio .hoverOnImage:hover .overlayFade {
+	height: 100%;
+}
+.forthPage .projectPortfolio .hoverOnImage img {
+	width: 360px;
+	height: 270px;
+	margin: 20px 0 0 20px;
+	display: block;
+	border-radius: 5px;
+}
+/* End Overlay on images */
+
+/* End Forth Page */
+
+/* Start Fifth Page */
+
+.fifthSection {
+	width: 100%;
+	height: 50vh;
+	background-color: #f1f1f1;
+	margin-top: 200px;
+}
+.fifthSection .myEffort {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 80px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.fifthSection .myEffort div i {
+	color: #ff305b;
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+.fifthSection .myEffort div h3 {
+	font-size: 26px;
+	font-weight: bold;
+}
+.fifthSection .myEffort div p {
+	color: #555555;
+	font-size: 18px;
+	font-size: bold;
+}
+/* End Fifth Page */
+
+/* Start Sixthly Page */
+
+.sixthlySection {
+	width: 100%;
+	min-height: 75vh;
+}
+
+.sixthlySection h1 {
+	font-size: 40px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/* Start hr is this website */
+.sixthlySection .width100px {
+	width: 150px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin-bottom: 5px;
+	margin: auto;
+}
+.sixthlySection .width40px {
+	width: 75px;
+	height: 1px;
+	background-color: #fff;
+	display: block;
+	margin: auto;
+}
+.sixthlySection .width50px {
+	width: 75px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin: auto;
+}
+/* End hr is this website */
+
+/* Start Information Client's Feedback  */
+
+.sixthlySection .SomeClients {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Start Polds down Opinion Client*/
+.sixthlySection .twoPolds {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sixthlySection .pold:first-child {
+	width: 20px;
+	height: 10px;
+	background-color: #ff305b;
+	border-radius: 10px;
+	display: inline-block;
+	padding: 4px 12px;
+	margin-top: 10px;
+}
+.sixthlySection .pold:last-child {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #ff305b;
+	border-radius: 50%;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+/* End Polds down Opinion Client*/
+
+.sixthlySection .SomeClients .informationAboutClient {
+	width: 750px;
+	height: 275px;
+	background-color: #f1f1f1;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.sixthlySection .SomeClients .informationAboutClient::before {
+	content: '';
+	position: absolute;
+	width: 420px;
+	height: 400px;
+	background-color: #ff305b;
+	transform: rotate(135deg) translate(-20px, 360px);
+	z-index: -1;
+}
+.sixthlySection .SomeClients .informationAboutClient img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 18%;
+	left: 5%;
+}
+.sixthlySection .SomeClients .informationAboutClient .aboutClient {
+	width: 70%;
+	margin: 6% 10% 10% 20%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.sixthlySection .SomeClients .informationAboutClient .aboutClient h2 {
+	font-size: 26px;
+	margin-bottom: 10px;
+	color: #333;
+}
+.sixthlySection .SomeClients .informationAboutClient .aboutClient i,
+.sixthlySection .SomeClients .informationAboutClient .aboutClient span {
+	color: #777777;
+	font-size: 15px;
+	font-weight: bold;
+}
+.sixthlySection .SomeClients .informationAboutClient .aboutClient p {
+	color: #555;
+	font-style: italic;
+	line-height: 1.5;
+}
+
+.sixthlySection .SomeClients .informationAboutClient .aboutClient .opinionClientStar i {
+	color: #f1c30d;
+}
+
+/* Start The seventh Page  */
+
+.sevenSection {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f1f1f1;
+	padding-bottom: 50px;
+}
+
+.sevenSection h1 {
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 50px;
+}
+/* Start hr is this website */
+.sevenSection .width100px {
+	width: 150px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin-bottom: 5px;
+	margin: auto;
+}
+.sevenSection .width40px {
+	width: 75px;
+	height: 1px;
+	background-color: #f1f1f1;
+	display: block;
+	margin: auto;
+}
+.sevenSection .width50px {
+	width: 75px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin: auto;
+}
+/* End hr is this website */
+
+.sevenSection .myBlogs {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.sevenSection .myBlogs .Blogs {
+	width: 360px;
+	height: 460px;
+	background-color: #fff;
+}
+
+.sevenSection .myBlogs .Blogs div {
+	padding: 20px;
+}
+
+.sevenSection .myBlogs .Blogs img {
+	width: 100%;
+}
+
+.sevenSection .myBlogs .Blogs div span {
+	color: #555;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.sevenSection .myBlogs .Blogs div h2 {
+	color: #333;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+.sevenSection .myBlogs .Blogs div h2:hover {
+	color: #ff305b;
+}
+
+.sevenSection .myBlogs .Blogs div p {
+	color: #555;
+	margin-bottom: 15px;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+.sevenSection .myBlogs .Blogs div a {
+	text-transform: uppercase;
+	color: #333;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+.sevenSection .myBlogs .Blogs div a:hover {
+	color: #ff305b;
+}
+
+/* End The seventh Page  */
+
+/*  Start Eighth Page  */
+
+.eighthSection {
+	width: 100%;
+	height: 100vh;
+}
+.eighthSection h1 {
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 50px;
+}
+/* Start hr is this website */
+.eighthSection .width100px {
+	width: 150px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin-bottom: 5px;
+	margin: auto;
+}
+.eighthSection .width40px {
+	width: 75px;
+	height: 1px;
+	background-color: #fff;
+	display: block;
+	margin: auto;
+}
+.eighthSection .width50px {
+	width: 75px;
+	height: 1px;
+	background-color: #ff305b;
+	display: block;
+	margin: auto;
+}
+/* End hr is this website */
+
+/* Start Form */
+
+.eighthSection .centerForm {
+	width: 80%;
+	margin: auto;
+}
+.newform {
+	width: 48%;
+	float: left;
+}
+
+.n-f1 {
+	margin-right: 2%;
+}
+
+.n-f2 {
+	margin-left: 2%;
+}
+
+form .newform div input[name="username"],
+form .newform div input[name="Email"],
+form div input[name="subject"],
+textarea {
+	width: 100%;
+	padding: 2%;
+	font-size: 16px;
+	border: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #999;
+	margin-bottom: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+form .newform div input[name="username"]:focus,
+form .newform div input[name="Email"]:focus,
+form div input[name="subject"]:focus,
+textarea:focus {
+	border: 1px solid #ff305b;
+}
+
+input[type="submit"] {
+	width: 20%;
+	border-radius: 5px;
+	padding: 1.5% 1%;
+	border: none;
+	font-size: 14px;
+	background: #ff305b;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 2%;
+	cursor: not-allowed;
+	transition: all .5s ease-in-out;
+}
+input[type="submit"]:hover {
+	background-color: #ec2403;
+}
+/* End Form */
+/*  End Eighth Page  */
+
+/* Start Footer */
+
+.footer {
+	width: 100%;
+	min-height: 20vh;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 60px 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.footer div {
+	width: 20%;
+	margin-left: 11%;
+}
+.footer div i {
+	color: #fff;
+	margin-right: 7%;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.footer div i:hover {
+	color: #ff305b;
+}
+.footer p {
+	margin-top: 8px;
+	color: #fff;
+	font-size: 17px;
+}
+.footer p span {
+	color: #ff305b;
+}
+.footer p span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* End Footer */
